@@ -1,0 +1,30 @@
+<app-nav-bar></app-nav-bar>
+
+
+
+
+<!-- <table *ngFor='let tweet of MyTweets'>
+    <tr>
+        <td>{{tweet.Message}}</td>
+        <td><button (click)="EditTweet(tweet.TweetID)">Edit</button></td>
+        
+        <td><button (click)="DeleteTweet(tweet.TweetID)">Delete</button></td>
+        
+    </tr>
+</table>
+ -->
+
+<div class="container">
+    <ul *ngFor = 'let Tweet of MyTweets'>
+        <div class="list-group-item">
+          
+            <li><B>{{Tweet.Message}} </B></li>
+          <table>
+            <tr>
+              <td class="fa fa-edit" style="font-size:24px" (click) = "EditTweet(Tweet.TweetID)"> | </td>
+              <td class="fa fa-trash" style="font-size:24px" (click) = "delete(Tweet.TweetID)"> </td>
+            </tr>
+          </table>
+        </div>
+    </ul>
+    </div>

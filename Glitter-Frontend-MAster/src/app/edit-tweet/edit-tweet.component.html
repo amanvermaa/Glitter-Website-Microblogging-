@@ -1,0 +1,21 @@
+<app-nav-bar></app-nav-bar>
+<div class="container">
+<form #editUser="ngForm" novalidate style="align-self: center;">
+	
+	<div>
+		<label style="text-align: left">
+			Tweet ID :
+		</label>
+		<input type="text" disabled name="TweetID" value="{{TweetID}}" ngModel>
+	</div>
+	<div>
+		<label style="text-align: left">Message :  </label>
+		
+		<input type="text" name="Message"value="{{Message}}" ngModel>
+	</div>
+	<div >
+		<button class="login100-form-btn" (click) = "onEdit(editUser.value)">
+		Submit</button>
+	</div>
+</form>
+</div>

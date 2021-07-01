@@ -1,0 +1,17 @@
+<app-nav-bar></app-nav-bar>
+
+
+
+<div class="container">
+    <ul *ngFor = 'let user of MyFollowing'>
+        <div class="list-group-item">
+          
+            <li><B>{{user.Name}} </B></li>
+          <table>
+            <tr>
+              <td><button (click)="Unfollow(user.UserID)"> Unfollow</button> </td>
+            </tr>
+          </table>
+        </div>
+    </ul>
+    </div>
